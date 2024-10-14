@@ -1,0 +1,270 @@
+/*style for header, nav link for consistentcy*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.site-name {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.nav .dropdown-menu .dropdown-item {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    border-radius: 0;
+}
+
+.dropdown-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1 !important;
+    color: #000; 
+    border-radius: 0;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-divider {
+    margin-top: 4px; 
+    margin-bottom: 4px; 
+}
+
+/* Show the dropdown menu */
+.show {display:block;}
+/*end of header*/
+
+/* start job_info css */
+/* Employer info section */
+.employer-info {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.employer-details {
+    flex-grow: 1;
+}
+
+.employer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.employer-name {
+    font-size: 34px;
+    color: #0077be;
+    margin: 0;
+    font-weight: bold;
+}
+
+.view-employer {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.view-employer:hover {
+    text-decoration: underline;
+}
+
+.employer-location {
+    margin: 5px 0; 
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Job details section */
+.job-info-container {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Details */
+.job-details {
+    margin-bottom: 20px;
+}
+
+.job-details h1 {
+    font-size: 24px;
+    color: #0077be;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: #666;
+}
+
+.job-details p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.job-details strong {
+    color: #0077be;
+    font-weight: bold;
+}
+
+/* Job actions buttons */
+.job-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; /* Space above buttons */
+}
+
+.job-actions form {
+    margin: 0;
+}
+
+.job-actions .btn {
+    margin-right: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #0077be; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #005f8d; 
+}
+
+/* Styles for Save Job button */
+#saveJobButton, .btn-save-job {
+    background-color: #109333;
+    color: white; 
+    cursor: pointer;
+}
+
+#saveJobButton:hover, .btn-save-job:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+
+/* Link styles */
+a {
+    color: #0077be; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .job-info-container {
+        padding: 15px;
+    }
+
+    .employer-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .view-employer {
+        position: static; /* Reset positioning on mobile */
+        margin-top: 5px; /* Add some spacing */
+    }
+
+    .job-actions .btn {
+        width: 100%;
+    }
+}

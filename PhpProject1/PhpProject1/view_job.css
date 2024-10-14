@@ -1,0 +1,209 @@
+/*style for header, nav link for consistentcy*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.site-name {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.nav .dropdown-menu .dropdown-item {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    border-radius: 0;
+}
+
+.dropdown-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1 !important;
+    color: #000; 
+    border-radius: 0;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-divider {
+    margin-top: 4px; 
+    margin-bottom: 4px; 
+}
+
+/* Show the dropdown menu */
+.show {display:block;}
+/*end of header*/
+
+
+
+
+/* Center the job title */
+.job-title {
+    text-align: center; /* Center the text */
+    font-size: 2rem; /* Larger font size for emphasis */
+    color: black; /* Consistent blue color */
+    margin-bottom: 20px; /* Space between the title and the job details box */
+}
+
+
+
+/* Job Info Styling */
+.job-info {
+    margin: 20px auto; /* Center and add space around the job info */
+    max-width: 600px; /* Maximum width for readability */
+    padding: 20px; /* Padding inside the job info section */
+    border: 1px solid #0077be; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the information items */
+.info-item {
+    margin-bottom: 20px; /* Space between items */
+    display: flex; /* Align label and value in the same row */
+    justify-content: space-between; /* Distribute space between label and value */
+    gap: 20px; /* Add gap between label and value */
+}
+
+/* Label (strong) styling */
+.info-item strong {
+    flex-basis: 30%; /* Set a flexible width for labels */
+    font-size: 1.1rem; /* Slightly larger text for labels */
+    color: black; /* Consistent blue color for labels */
+    font-weight: bold; /* Emphasize the labels */
+    white-space: nowrap; /* Prevent labels from wrapping */
+}
+
+/* Span Styling */
+/* Value (span) styling */
+.info-item span {
+    flex-basis: 70%; /* Set a flexible width for values */
+    font-size: 1rem; /* Normal font size for the values */
+    color: #333; /* Darker text for the values */
+    word-wrap: break-word; /* Wrap long text */
+}
+
+/* Button Styling */
+
+/* Back Button Styling (Centered below the box) */
+.back-btn-container {
+    text-align: center; /* Center the button container */
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #0077be; /* Same blue as the border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for a better click area */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text in button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px; /* Space above the button */
+}
+
+.btn-primary:hover {
+    background-color: #005f9e; /* Darker shade on hover */
+}
+
+
+/* Ensure the main section has proper layout */
+#main {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for better readability */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add some space between search and application details */
+}
+
+/* Center the job details container */
+.job-details-container {
+    width: 100%; /* Ensure it spans full width inside the container */
+    max-width: 600px; /* Limit the width for readability */
+    margin: 0 auto 20px; /* Center it horizontally and add margin below */
+    padding: 20px; /* Padding inside the container */
+    background-color: #fff; /* White background to stand out */
+    border: 1px solid #0077be; /* Add a blue border */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+

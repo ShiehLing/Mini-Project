@@ -1,0 +1,490 @@
+/*style for header, nav link for consistentcy*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.site-name {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.nav .dropdown-menu .dropdown-item {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    border-radius: 0;
+}
+
+.dropdown-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1 !important;
+    color: #000; 
+    border-radius: 0;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-divider {
+    margin-top: 4px; 
+    margin-bottom: 4px; 
+}
+
+/* Show the dropdown menu */
+.show {display:block;}
+/*end of header*/
+
+
+/* Side navigation styling */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0077be;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 32px; /* Increased padding for better click area */
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFF;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidenav a:hover {
+    color: #064870;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+/* end side nav style*/
+
+
+.btn-logout {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 125px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--af-white);
+}
+
+.btn-logout svg {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+}
+
+.sign svg path {
+  fill: var(--night-rider);
+}
+
+.drop-list .nav-link {
+  position: absolute;
+  width: 70%;
+  opacity: 1;
+  color: var(--night-rider);
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+/*end of header*/
+
+/* Header styling */
+header {
+    background-color: white;
+    color: black;
+    z-index: 1; /* Ensure header is above other content */
+    position: relative; /* Ensure the header is positioned correctly */
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+header .d-flex {
+    display: flex; /* Ensure flex display is applied */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Basic styling for the navigation bar */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Side navigation styling */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0077be;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 32px; /* Increased padding for better click area */
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFF;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidenav a:hover {
+    color: #064870;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+/* Button styling for the side nav toggle */
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #040f16;
+    color: #f5f5f5;
+    position: relative;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn .text {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.5s;
+    transform: translateX(55px);
+}
+
+.btn:hover .icon {
+    width: 175px;
+}
+
+.btn:hover .text {
+    opacity: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active .icon {
+    transform: scale(0.85);
+}
+
+/* Color on side nav menu button */
+.btn:hover .icon rect {
+    fill: black;
+}
+
+/* When sidenav is open */
+.sidenav-active .main-content {
+    margin-left: 270px;
+}
+
+/* Default state when sidenav is closed */
+.main-content {
+    margin: 80px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0077be;
+    color: white;
+    font-weight: bold;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+
+/* chart display */
+
+/* chart display */
+.chart-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chart-title {
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Center the title */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Chart box styling */
+.chart-box {
+    border: 1px solid #ccc; /* Border around the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit the width */
+}
+
+/* Canvas styles */
+.chart-box canvas {
+    width: 100% !important; /* Ensure canvas takes full width */
+    height: 400px !important; /* Set a specific height for charts */
+    margin: 10px 0; /* Space between the charts */
+}
+
+ /* Button style */
+    .btn-view {
+        display: inline-block; /* Make it behave like a button */
+        padding: 10px 15px; /* Add padding for a button-like appearance */
+        color: white; /* Text color */
+        background-color: #0077be;
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        text-align: center; /* Center the text */
+        transition: background-color 0.3s; /* Smooth background color transition */
+    }
+
+    .btn-view:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+
+    /* Container for the button */
+    .button-container {
+        text-align: center; /* Center the button in the div */
+    }

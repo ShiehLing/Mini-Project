@@ -1,0 +1,357 @@
+/*style for header, nav link for consistentcy*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.site-name {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.nav .dropdown-menu .dropdown-item {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    border-radius: 0;
+}
+
+.dropdown-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1 !important;
+    color: #000; 
+    border-radius: 0;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-divider {
+    margin-top: 4px; 
+    margin-bottom: 4px; 
+}
+
+/* Show the dropdown menu */
+.show {display:block;}
+/*end of header*/
+
+
+
+/* Side navigation styling */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11; /* Ensure the side nav is on top of the header */
+  top: 0;
+  left: 0;
+  background-color: #0077be;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  transition: width 0.5s ease;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #064870;
+  transition: color 0.3s ease;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Button styling for the side nav toggle */
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+  position: relative; /* Ensure positioning for .icon */
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  top: 50%; /* Center vertically for the word menu*/
+  transform: translateY(-50%); /* Adjust centering for menu word */
+}
+
+.btn .text {
+  margin-left: 10px; /* Add some space between the icon and text */
+  display: flex;
+  align-items: center; /* Vertically center text */
+  transition: opacity 0.5s;
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}
+
+/* color on side nav menu button the 3 lines that */
+
+.btn:hover .icon rect {
+    fill: black; /* Change color on hover */
+}
+
+
+.tab-content {
+    display: none; /* Hide all tabs initially */
+}
+
+#bookmark {
+    display: block; /* Show the Bookmark tab by default */
+}
+
+
+
+
+
+/*text  style*/
+.text {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Activity section styles */
+.activity-section {
+    padding: 2em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 25px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between; /* Distribute space between elements */
+    max-width: 100%; /* Full width of the container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap; /* Prevent wrapping of form items */
+}
+
+.search-form .form-control,
+.search-form .form-select {
+    flex: 1 1 auto; /* Flex-grow and shrink based on available space */
+    min-width: 150px; /* Ensure a minimum width */
+    margin-right: 10px; /* Space between form elements */
+    margin-bottom: 0; /* Ensure no bottom margin */
+}
+.search-form label {
+    margin-right: 10px; /* Add some space between labels and inputs */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px; /* Increase padding inside input fields */
+    font-size: 1.1em; /* Make the text in the fields a bit larger */
+    margin-bottom: 15px; /* Adds space below each input */
+}
+
+.search-btn {
+    background-color: #0077be;
+    color: white;
+    font-size: 1.1em;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px; /* Add space before the button */
+}
+
+.search-btn:hover {
+    background-color: #006299;
+}
+
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove double borders */
+    margin-top: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: #f9f9f9;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Add subtle border between rows */
+    color: #333; /* Text color */
+}
+
+table th {
+    background-color: #0077be;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background for clarity */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Headline Styles */
+h3 {
+    font-size: 1.5em;
+    color: #0077be;
+    margin-bottom: 1em;
+}
+
+/* Message for No Results */
+.no-results {
+    font-size: 1.2em;
+    color: #999;
+    margin-top: 1em;
+}
